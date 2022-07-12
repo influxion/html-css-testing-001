@@ -42,20 +42,51 @@
         /* FLEXBOX */
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-start;
+        gap: 40px;
+      }
+
+      .el {
+        /* 
+        defaults:
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto; */
+
+        /* flex-basis: 70px; */
+        /* flex-shrink: 0; */
+        /* flex: 0 0 200px; */
+
+        /* flex-grow: 1; */
+        flex: 1;
+      }
+
+      .el--1 {
+        align-self: flex-start;
+        /* order: 2; */
+        /* flex-grow: 2; */
+      }
+
+      .el--5 {
+        align-self: stretch;
+        order: 1;
+      }
+
+      .el--6 {
+        order: -1;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="el el--1">HTML</div>
-      <div class="el el--2">and</div>
-      <div class="el el--3">CSS</div>
-      <div class="el el--4">are</div>
-      <div class="el el--5">amazing</div>
-      <div class="el el--6">languages</div>
-      <div class="el el--7">to</div>
-      <div class="el el--8">learn</div>
+      <div class="el el--1">1HTML</div>
+      <div class="el el--2">2and</div>
+      <div class="el el--3">3CSS</div>
+      <div class="el el--4">4are</div>
+      <div class="el el--5">5amazing</div>
+      <div class="el el--6">6languages</div>
+      <div class="el el--7">7to</div>
+      <div class="el el--8">8learn</div>
     </div>
   </body>
 </html>
